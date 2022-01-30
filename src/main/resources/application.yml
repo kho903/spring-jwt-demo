@@ -21,3 +21,9 @@ spring:
 logging:
   level:
     com.example: DEBUG
+
+jwt:
+  header: Authorization
+  # HS512 알고리즘 사용 -> secret 키는 64바이트 이상이어야 함
+  secret: and0LXNwcmluZy1ib290LWRlbW8tcHJvamVjdC1mb3IK
+  token-validity-in-seconds: 86400
