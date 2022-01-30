@@ -13,9 +13,11 @@ spring:
     hibernate:
       ddl-auto: create-drop
     properties:
-      hibernamte:
+      hibernate:
         format-sql: true
         show_sql: true
+    defer-datasource-initialization: true
+#    generate-ddl: false
 logging:
   level:
     com.example: DEBUG
